@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kawin Pongpluem</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+      integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+
+        var x = document.getElementById("modeToggle");
+        if (x.innerHTML === "Dark mode") {
+          x.innerHTML = "Light mode";
+        } else {
+          x.innerHTML = "Dark mode";
+        }
+      }
+    </script>
+
+    <style>
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(91, 3, 232, 0.2);
+        transition: 0.3s;
+        width: 150px;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      .center {
+        margin: auto;
+        text-align: center;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+      }
+
+      .right {
+        margin: auto;
+        text-align: right;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+      }
+
+      body {
+        background-color: white;
+        color: black;
+      }
+
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+    </style>
+
+    <div class="right">
+      <button id="modeToggle" onclick="myFunction()">Dark mode</button>
+    </div>
+    <div class="card center">
+      <h4><b>Kawin Pongpluem</b></h4>
+
+      <div class="center">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/002/275/847/original/male-avatar-profile-icon-of-smiling-caucasian-man-vector.jpg"
+          alt="Avatar"
+          style="width: 100px"
+        />
+        <p>Yothinburana Scholl</p>
+        <p>M.4/15</p>
+        <a href="http://www.fb.com"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://instagram.com/prxgxs?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="http://www.google.com"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </body>
+</html>
